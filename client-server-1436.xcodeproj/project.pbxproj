@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1339240826C27946004C6735 /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1339240726C27946004C6735 /* SendViewController.swift */; };
+		1339240B26C27966004C6735 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1339240A26C27966004C6735 /* DetailViewController.swift */; };
+		1339240F26C28FF1004C6735 /* NotificationCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1339240E26C28FF1004C6735 /* NotificationCenterViewController.swift */; };
+		1339241226C29488004C6735 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1339241126C29488004C6735 /* SessionViewController.swift */; };
+		1339241426C29686004C6735 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1339241326C29686004C6735 /* MainViewController.swift */; };
 		13BB56D026C26A2A00569600 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB56CF26C26A2A00569600 /* AppDelegate.swift */; };
 		13BB56D226C26A2A00569600 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB56D126C26A2A00569600 /* SceneDelegate.swift */; };
 		13BB56D426C26A2A00569600 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB56D326C26A2A00569600 /* ViewController.swift */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1339240726C27946004C6735 /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
+		1339240A26C27966004C6735 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1339240E26C28FF1004C6735 /* NotificationCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterViewController.swift; sourceTree = "<group>"; };
+		1339241126C29488004C6735 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		1339241326C29686004C6735 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		13BB56CC26C26A2A00569600 /* client-server-1436.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "client-server-1436.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13BB56CF26C26A2A00569600 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13BB56D126C26A2A00569600 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +68,41 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		1339240926C2794B004C6735 /* lesson-1 */ = {
+			isa = PBXGroup;
+			children = (
+				1339240C26C28FC2004C6735 /* NotificationCenter */,
+				1339240D26C28FD3004C6735 /* Singleton */,
+			);
+			path = "lesson-1";
+			sourceTree = "<group>";
+		};
+		1339240C26C28FC2004C6735 /* NotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				1339240E26C28FF1004C6735 /* NotificationCenterViewController.swift */,
+			);
+			path = NotificationCenter;
+			sourceTree = "<group>";
+		};
+		1339240D26C28FD3004C6735 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				1339240726C27946004C6735 /* SendViewController.swift */,
+				1339240A26C27966004C6735 /* DetailViewController.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		1339241026C29431004C6735 /* homework-1 */ = {
+			isa = PBXGroup;
+			children = (
+				1339241126C29488004C6735 /* SessionViewController.swift */,
+				1339241326C29686004C6735 /* MainViewController.swift */,
+			);
+			path = "homework-1";
+			sourceTree = "<group>";
+		};
 		13BB56C326C26A2A00569600 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +122,8 @@
 		13BB56CE26C26A2A00569600 /* client-server-1436 */ = {
 			isa = PBXGroup;
 			children = (
+				1339240926C2794B004C6735 /* lesson-1 */,
+				1339241026C29431004C6735 /* homework-1 */,
 				1339240626C27621004C6735 /* App */,
 				1339240526C275D3004C6735 /* Resources */,
 			);
@@ -153,9 +200,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1339240F26C28FF1004C6735 /* NotificationCenterViewController.swift in Sources */,
+				1339240826C27946004C6735 /* SendViewController.swift in Sources */,
 				13BB56D426C26A2A00569600 /* ViewController.swift in Sources */,
+				1339240B26C27966004C6735 /* DetailViewController.swift in Sources */,
 				13BB56D026C26A2A00569600 /* AppDelegate.swift in Sources */,
+				1339241226C29488004C6735 /* SessionViewController.swift in Sources */,
 				13BB56D226C26A2A00569600 /* SceneDelegate.swift in Sources */,
+				1339241426C29686004C6735 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
