@@ -13,12 +13,3 @@ class Session {
     var userId: Int = 0
     var token: String = ""
 }
-
-class SessionViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let session = Session.instance
-        session.userId = 1984
-        session.token = "example"
-    }
-}
