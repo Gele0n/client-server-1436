@@ -9,7 +9,7 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    let vkService = VKService(session: Session.instance)
+ //   let vkService = VKService(session: Session.instance)
     
     let errorMessage = "Ошибка!"
     
