@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import RealmSwift
 struct Groups: Codable {
     let response: Response
 }
@@ -14,12 +14,12 @@ struct Response: Codable {
     let count: Int
     let items: [GroupItem]
 }
-struct GroupItem: Codable {
-    let id: Int
-    let name: String
-    let groupDescription: String?
-    let imageURL: String
-    let membersCount: Int
+class GroupItem: Object, Codable {
+    @objc dynamic var id: Int = 0
+    @objc dynamic var name: String = ""
+    @objc dynamic var groupDescription: String?
+    @objc dynamic var imageURL: String = ""
+    @objc dynamic var membersCount: Int = 0
 
     enum CodingKeys: String, CodingKey {
         case id, name
