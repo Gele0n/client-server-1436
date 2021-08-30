@@ -28,6 +28,9 @@
 		13BB56D726C26A2A00569600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB56D526C26A2A00569600 /* Main.storyboard */; };
 		13BB56D926C26A2B00569600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13BB56D826C26A2B00569600 /* Assets.xcassets */; };
 		13BB56DC26C26A2B00569600 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB56DA26C26A2B00569600 /* LaunchScreen.storyboard */; };
+		13E6486926DD3B7F0008B2E8 /* UserDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E6486826DD3B7F0008B2E8 /* UserDB.swift */; };
+		13E6486B26DD3B980008B2E8 /* PhotoDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E6486A26DD3B980008B2E8 /* PhotoDB.swift */; };
+		13E6486D26DD3BAE0008B2E8 /* GroupDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E6486C26DD3BAE0008B2E8 /* GroupDB.swift */; };
 		45344A56283FB68AC636CFB4 /* Pods_client_server_1436.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B3777F79126B5599C1C23D0 /* Pods_client_server_1436.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +58,9 @@
 		13BB56D826C26A2B00569600 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13BB56DB26C26A2B00569600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13BB56DD26C26A2B00569600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13E6486826DD3B7F0008B2E8 /* UserDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDB.swift; sourceTree = "<group>"; };
+		13E6486A26DD3B980008B2E8 /* PhotoDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDB.swift; sourceTree = "<group>"; };
+		13E6486C26DD3BAE0008B2E8 /* GroupDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDB.swift; sourceTree = "<group>"; };
 		469F32E17D182EFC2138F6E1 /* Pods-client-server-1436.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-client-server-1436.debug.xcconfig"; path = "Target Support Files/Pods-client-server-1436/Pods-client-server-1436.debug.xcconfig"; sourceTree = "<group>"; };
 		8B3777F79126B5599C1C23D0 /* Pods_client_server_1436.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_client_server_1436.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4BA53F94FC5AF6058B8616C /* Pods-client-server-1436.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-client-server-1436.release.xcconfig"; path = "Target Support Files/Pods-client-server-1436/Pods-client-server-1436.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,9 +117,8 @@
 		13595DB526D33D5F00D7A36F /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				13595DB626D33D7200D7A36F /* UserAPI.swift */,
-				13595DB826D33DA000D7A36F /* GroupAPI.swift */,
-				13595DBA26D33DA900D7A36F /* PhotoAPI.swift */,
+				13E6486726DD3B670008B2E8 /* DB */,
+				13E6486626DD3B4D0008B2E8 /* API */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -185,14 +190,14 @@
 		13BB56CE26C26A2A00569600 /* client-server-1436 */ = {
 			isa = PBXGroup;
 			children = (
-				13E3F75E26CAD5E000261C91 /* homework-4 */,
+				13E3F75E26CAD5E000261C91 /* homework-5 */,
 				1339240626C27621004C6735 /* App */,
 				1339240526C275D3004C6735 /* Resources */,
 			);
 			path = "client-server-1436";
 			sourceTree = "<group>";
 		};
-		13E3F75E26CAD5E000261C91 /* homework-4 */ = {
+		13E3F75E26CAD5E000261C91 /* homework-5 */ = {
 			isa = PBXGroup;
 			children = (
 				13595DAC26D33BDF00D7A36F /* DynamicJSON */,
@@ -201,7 +206,7 @@
 				13595DBC26D33DCF00D7A36F /* Controllers */,
 				13595DCD26D33F1F00D7A36F /* FirstViewController.swift */,
 			);
-			path = "homework-4";
+			path = "homework-5";
 			sourceTree = "<group>";
 		};
 		13E3F76126CB5D0B00261C91 /* Models */ = {
@@ -213,6 +218,26 @@
 				13595DB326D33D5100D7A36F /* Photo.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		13E6486626DD3B4D0008B2E8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				13595DB626D33D7200D7A36F /* UserAPI.swift */,
+				13595DB826D33DA000D7A36F /* GroupAPI.swift */,
+				13595DBA26D33DA900D7A36F /* PhotoAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		13E6486726DD3B670008B2E8 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				13E6486826DD3B7F0008B2E8 /* UserDB.swift */,
+				13E6486A26DD3B980008B2E8 /* PhotoDB.swift */,
+				13E6486C26DD3BAE0008B2E8 /* GroupDB.swift */,
+			);
+			path = DB;
 			sourceTree = "<group>";
 		};
 		7B045839CD68EFC2940329C8 /* Pods */ = {
@@ -346,9 +371,12 @@
 				13595DCC26D33EE700D7A36F /* GroupTableViewCellNoDesc.swift in Sources */,
 				13595DC226D33E8800D7A36F /* UserInfoViewController.swift in Sources */,
 				13595DB926D33DA000D7A36F /* GroupAPI.swift in Sources */,
+				13E6486B26DD3B980008B2E8 /* PhotoDB.swift in Sources */,
+				13E6486D26DD3BAE0008B2E8 /* GroupDB.swift in Sources */,
 				13595DB226D33D3C00D7A36F /* Group.swift in Sources */,
 				13595DCE26D33F1F00D7A36F /* FirstViewController.swift in Sources */,
 				13595DC426D33EA800D7A36F /* PhotoCollectionViewController.swift in Sources */,
+				13E6486926DD3B7F0008B2E8 /* UserDB.swift in Sources */,
 				13BB56D026C26A2A00569600 /* AppDelegate.swift in Sources */,
 				13595DC626D33EBE00D7A36F /* PhotoCollectionViewCell.swift in Sources */,
 				1339241226C29488004C6735 /* Session.swift in Sources */,

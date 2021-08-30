@@ -10,18 +10,26 @@ import UIKit
 class GroupTableViewController: UITableViewController {
     
     var groupItems: [GroupItem] = []
+    let groupDB = GroupDB()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let localGroups = groupDB.get()
+        
+        if localGroups.count > 0 {
+            groupItems = localGroups
+        }
+        
         GroupAPI(Session.instance).get{ [weak self] groups in
             guard let self = self else { return }
-            self.groupItems = groups!.response.items
+            if groups!.response.items != localGroups {
+                self.groupItems = groups!.response.items
+                self.groupDB.addUpdate(groups!.response.items)
+            }
             self.tableView.reloadData()
         }
     }
-    
-    // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return groupItems.count
