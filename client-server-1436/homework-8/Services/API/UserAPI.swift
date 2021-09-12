@@ -44,6 +44,7 @@ class UserAPI {
                 let country = data["country"] as! [String: Any]
                 
                 let user = User()
+                
                 user.id = data["id"] as! Int
                 user.firstName = data["first_name"] as! String
                 user.lastName = data["last_name"] as! String

@@ -42,6 +42,8 @@ class FirstViewController: UIViewController {
         
         let request = URLRequest(url: urlComponents.url!)
         
+        //print(request.description)
+        
         wk.load(request)
     }
 }

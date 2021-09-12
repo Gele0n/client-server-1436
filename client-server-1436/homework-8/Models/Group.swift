@@ -7,13 +7,16 @@
 
 import Foundation
 import RealmSwift
+
 struct Groups: Codable {
     let response: Response
 }
+
 struct Response: Codable {
     let count: Int
     let items: [GroupItem]
 }
+
 class GroupItem: Object, Codable {
     @objc dynamic var id: Int = 0
     @objc dynamic var name: String = ""

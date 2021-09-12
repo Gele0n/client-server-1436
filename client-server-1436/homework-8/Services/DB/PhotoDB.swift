@@ -37,3 +37,4 @@ class PhotoDB: PhotoDBProtocol {
         }
     }
 }
+

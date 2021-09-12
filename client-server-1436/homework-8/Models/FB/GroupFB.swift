@@ -56,5 +56,3 @@ class GroupFB {
                 "imageURL": imageURL] as [AnyHashable: Any]
     }
 }
-
-
