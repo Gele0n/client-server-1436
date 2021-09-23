@@ -81,9 +81,6 @@ class FeedTableViewController: UITableViewController {
         return view
     }
     
-    // MARK: - Create & configure cells.
-    
-    // MARK: - Feed item author, date & image.
     func feedInfoCell(indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "feedItemInfoCell", for: indexPath) as! FeedItemInfoTableViewCell
@@ -93,11 +90,11 @@ class FeedTableViewController: UITableViewController {
         
         switch feedItems[indexPath.section].sourceID.signum() {
         
-        case 1: // Пост пользователя
+        case 1:
             let currentFeedItemProfile = feedProfiles.filter{ $0.id == currentFeedItem.sourceID }[0]
             cell.configure(profile: currentFeedItemProfile, postDate: currentFeedItem.date)
             
-        case -1: // Пост группы
+        case -1:
             let currentFeedItemGroup = feedGroups.filter{ $0.id == abs(currentFeedItem.sourceID) }[0]
             cell.configure(group: currentFeedItemGroup, postDate: currentFeedItem.date)
             
@@ -107,7 +104,6 @@ class FeedTableViewController: UITableViewController {
         return cell
     }
     
-    // MARK: - Feed item text.
     func feedTextCell(indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "feedItemTextCell", for: indexPath) as! FeedItemTextTableViewCell
@@ -123,7 +119,6 @@ class FeedTableViewController: UITableViewController {
         } else { return UITableViewCell() }
     }
     
-    // MARK: - Feed item photo.
     func feedPhotoCell(indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "feedItemPhotoCell", for: indexPath) as! FeedItemPhotoTableViewCell

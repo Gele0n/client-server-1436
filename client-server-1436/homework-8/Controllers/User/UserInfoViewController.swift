@@ -16,41 +16,25 @@ class UserInfoViewController: UIViewController {
     @IBOutlet weak var pinIcon: UIImageView!
     @IBOutlet weak var userLocation: UILabel!
     
-    let userDB = UserDB()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let localUser = UserDB().get()
-        
-        if localUser != nil {
-            display(localUser!)
-        }
-        
-        UserAPI(Session.instance).get{ user in
-            guard let user = user else { return }
-            if user != localUser {
-                self.update(user)
-            }
+        UserAPI(Session.instance).get{ [weak self] user in
+            guard let self = self else { return }
+            self.display(user!)
         }
     }
     
     private func display(_ user: User) {
         
-        self.userName.text = "\(user.firstName) \(user.lastName)"
-        self.userLocation.text = "\(user.city), \(user.country)."
+        self.userName.text = "\(user.response[0].firstName) \(user.response[0].lastName)"
+        self.userLocation.text = "\(user.response[0].city.title), \(user.response[0].country.title)."
         
-        if let imageURL = user.imageURL {
+        if let imageURL = user.response[0].photo200 {
             AF.request(imageURL, method: .get).responseImage { response in
                 guard let image = response.value else { return }
                 self.userImage.image = image
             }
         }
-    }
-    
-    private func update(_ user: User) {
-        
-        userDB.addUpdate(user)
-        self.display(user)
     }
 }

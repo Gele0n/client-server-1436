@@ -61,8 +61,6 @@ class FeedTableViewCell: UITableViewCell {
                 
                 case "link":
                     
-                    //postText.text! += "\n[--link--]"
-                    
                     if let photo604 = firstAttachment.link?.photo?.photo604 {
                         AF.request(photo604, method: .get).responseImage { response in
                             guard let image = response.value else { return }
@@ -71,8 +69,6 @@ class FeedTableViewCell: UITableViewCell {
                     }
                     
                 case "photo":
-                    
-                    //postText.text! += "\n[--photo--]"
                     
                     if let photo604 = firstAttachment.photo?.photo604 {
                         AF.request(photo604, method: .get).responseImage { response in

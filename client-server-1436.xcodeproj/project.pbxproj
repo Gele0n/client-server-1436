@@ -7,11 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1314D6E426E60133001B73A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1314D6E326E60133001B73A8 /* GoogleService-Info.plist */; };
 		1339241226C29488004C6735 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1339241126C29488004C6735 /* Session.swift */; };
-		1353EA4526E0BEF500CAD496 /* UserFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353EA4426E0BEF500CAD496 /* UserFB.swift */; };
-		1353EA4726E0BF0F00CAD496 /* GroupFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1353EA4626E0BF0F00CAD496 /* GroupFB.swift */; };
-		13595DAE26D33CAE00D7A36F /* DynamicJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13595DAD26D33CAE00D7A36F /* DynamicJSON.swift */; };
 		13595DB026D33D2200D7A36F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13595DAF26D33D2200D7A36F /* User.swift */; };
 		13595DB226D33D3C00D7A36F /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13595DB126D33D3C00D7A36F /* Group.swift */; };
 		13595DB426D33D5100D7A36F /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13595DB326D33D5100D7A36F /* Photo.swift */; };
@@ -43,11 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1314D6E326E60133001B73A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1339241126C29488004C6735 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		1353EA4426E0BEF500CAD496 /* UserFB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFB.swift; sourceTree = "<group>"; };
-		1353EA4626E0BF0F00CAD496 /* GroupFB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFB.swift; sourceTree = "<group>"; };
-		13595DAD26D33CAE00D7A36F /* DynamicJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicJSON.swift; sourceTree = "<group>"; };
 		13595DAF26D33D2200D7A36F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		13595DB126D33D3C00D7A36F /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		13595DB326D33D5100D7A36F /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
@@ -105,7 +97,6 @@
 		1339240526C275D3004C6735 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1314D6E326E60133001B73A8 /* GoogleService-Info.plist */,
 				13BB56D526C26A2A00569600 /* Main.storyboard */,
 				13BB56D826C26A2B00569600 /* Assets.xcassets */,
 				13BB56DA26C26A2B00569600 /* LaunchScreen.storyboard */,
@@ -121,23 +112,6 @@
 				13BB56D126C26A2A00569600 /* SceneDelegate.swift */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		1353EA4326E0BEE200CAD496 /* FB */ = {
-			isa = PBXGroup;
-			children = (
-				1353EA4426E0BEF500CAD496 /* UserFB.swift */,
-				1353EA4626E0BF0F00CAD496 /* GroupFB.swift */,
-			);
-			path = FB;
-			sourceTree = "<group>";
-		};
-		13595DAC26D33BDF00D7A36F /* DynamicJSON */ = {
-			isa = PBXGroup;
-			children = (
-				13595DAD26D33CAE00D7A36F /* DynamicJSON.swift */,
-			);
-			path = DynamicJSON;
 			sourceTree = "<group>";
 		};
 		13595DB526D33D5F00D7A36F /* Services */ = {
@@ -226,7 +200,6 @@
 		13E3F75E26CAD5E000261C91 /* homework-8 */ = {
 			isa = PBXGroup;
 			children = (
-				13595DAC26D33BDF00D7A36F /* DynamicJSON */,
 				13E3F76126CB5D0B00261C91 /* Models */,
 				13595DB526D33D5F00D7A36F /* Services */,
 				13595DBC26D33DCF00D7A36F /* Controllers */,
@@ -238,7 +211,6 @@
 		13E3F76126CB5D0B00261C91 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1353EA4326E0BEE200CAD496 /* FB */,
 				1339241126C29488004C6735 /* Session.swift */,
 				13595DAF26D33D2200D7A36F /* User.swift */,
 				13595DB126D33D3C00D7A36F /* Group.swift */,
@@ -341,7 +313,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				13BB56DC26C26A2B00569600 /* LaunchScreen.storyboard in Resources */,
-				1314D6E426E60133001B73A8 /* GoogleService-Info.plist in Resources */,
 				13BB56D926C26A2B00569600 /* Assets.xcassets in Resources */,
 				13BB56D726C26A2A00569600 /* Main.storyboard in Resources */,
 			);
@@ -401,7 +372,6 @@
 				13FBE35626EE2A0D00EE8BA6 /* Feed.swift in Sources */,
 				13A5649426FC587C00791D16 /* FeedItemFooter.swift in Sources */,
 				13FBE35926EE2BB400EE8BA6 /* FeedTableViewController.swift in Sources */,
-				13595DAE26D33CAE00D7A36F /* DynamicJSON.swift in Sources */,
 				13595DB726D33D7200D7A36F /* UserAPI.swift in Sources */,
 				13FBE35B26EE2BC200EE8BA6 /* FeedTableViewCell.swift in Sources */,
 				13A5649026FC581200791D16 /* FeedItemPhotoTableViewCell.swift in Sources */,
@@ -410,9 +380,7 @@
 				13595DCC26D33EE700D7A36F /* GroupTableViewCellNoDesc.swift in Sources */,
 				13595DC226D33E8800D7A36F /* UserInfoViewController.swift in Sources */,
 				13595DB926D33DA000D7A36F /* GroupAPI.swift in Sources */,
-				1353EA4526E0BEF500CAD496 /* UserFB.swift in Sources */,
 				13595DB226D33D3C00D7A36F /* Group.swift in Sources */,
-				1353EA4726E0BF0F00CAD496 /* GroupFB.swift in Sources */,
 				13A5649226FC585700791D16 /* FeedItemInfoTableViewCell.swift in Sources */,
 				13595DCE26D33F1F00D7A36F /* FirstViewController.swift in Sources */,
 				13595DC426D33EA800D7A36F /* PhotoCollectionViewController.swift in Sources */,

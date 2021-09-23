@@ -12,7 +12,7 @@
         <!--First View Controller-->
         <scene sceneID="xNf-ao-VSK">
             <objects>
-                <viewController id="v7c-5U-ARj" customClass="FirstViewController" customModule="ys_client_server_1347" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="v7c-5U-ARj" customClass="FirstViewController" customModule="client_server_1436" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z6J-aT-exn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,7 +48,7 @@
         <!--Фото-->
         <scene sceneID="tl9-sZ-Nc7">
             <objects>
-                <collectionViewController id="iGM-ad-LIN" customClass="PhotoCollectionViewController" customModule="ys_client_server_1347" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="iGM-ad-LIN" customClass="PhotoCollectionViewController" customModule="client_server_1436" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="4sA-nG-zH4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,7 +60,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="rRX-wR-Q5f" customClass="PhotoCollectionViewCell" customModule="ys_client_server_1347" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="rRX-wR-Q5f" customClass="PhotoCollectionViewCell" customModule="client_server_1436" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ycS-Eo-DFA">
@@ -101,12 +101,12 @@
         <!--Я-->
         <scene sceneID="QcC-wW-z22">
             <objects>
-                <viewController id="YdX-Vq-foD" customClass="UserInfoViewController" customModule="ys_client_server_1347" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YdX-Vq-foD" customClass="UserInfoViewController" customModule="client_server_1436" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dZn-Ql-vJi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gVw-F0-wHR" customClass="RoundedImageView" customModule="ys_client_server_1347" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gVw-F0-wHR" customClass="RoundedImageView" customModule="client_server_1436" customModuleProvider="target">
                                 <rect key="frame" x="107" y="20" width="200" height="200"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
@@ -185,20 +185,20 @@
         <!--Группы-->
         <scene sceneID="JG8-51-7X1">
             <objects>
-                <tableViewController id="YlS-rE-sBo" customClass="GroupTableViewController" customModule="ys_client_server_1347" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="YlS-rE-sBo" customClass="GroupTableViewController" customModule="client_server_1436" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eMv-BY-fm5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCell" rowHeight="120" id="4Vt-7R-bnX" customClass="GroupTableViewCell" customModule="ys_client_server_1347" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCell" rowHeight="120" id="4Vt-7R-bnX" customClass="GroupTableViewCell" customModule="client_server_1436" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Vt-7R-bnX" id="CtZ-dg-xZ0">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Zn-5z-W4J" customClass="RoundedImageView" customModule="ys_client_server_1347" customModuleProvider="target">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Zn-5z-W4J" customClass="RoundedImageView" customModule="client_server_1436" customModuleProvider="target">
                                             <rect key="frame" x="10" y="10" width="100" height="100"/>
                                             <color key="backgroundColor" systemColor="systemYellowColor"/>
                                             <constraints>
@@ -248,14 +248,14 @@
                                     <outlet property="groupName" destination="LQ8-Sr-47Y" id="VxD-zk-lhj"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCellNoDesc" rowHeight="120" id="gzO-mK-b8s" customClass="GroupTableViewCellNoDesc" customModule="ys_client_server_1347" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCellNoDesc" rowHeight="120" id="gzO-mK-b8s" customClass="GroupTableViewCellNoDesc" customModule="client_server_1436" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="144.5" width="414" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gzO-mK-b8s" id="iNe-J9-bL2">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fs3-gg-kXu" customClass="RoundedImageView" customModule="ys_client_server_1347" customModuleProvider="target">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fs3-gg-kXu" customClass="RoundedImageView" customModule="client_server_1436" customModuleProvider="target">
                                             <rect key="frame" x="10" y="10" width="100" height="100"/>
                                             <color key="backgroundColor" systemColor="systemYellowColor"/>
                                             <constraints>
@@ -310,21 +310,21 @@
         <!--Лента-->
         <scene sceneID="KCz-QV-AEa">
             <objects>
-                <tableViewController id="H3W-VA-io3" customClass="FeedTableViewController" customModule="ys_client_server_1347" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="H3W-VA-io3" customClass="FeedTableViewController" customModule="client_server_1436" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="gZ5-Op-j1C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="feedItemInfoCell" rowHeight="120" id="XAN-LV-9jN" customClass="FeedItemInfoTableViewCell" customModule="ys_client_server_1347" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="feedItemInfoCell" rowHeight="120" id="XAN-LV-9jN" customClass="FeedItemInfoTableViewCell" customModule="client_server_1436" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="49.5" width="414" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XAN-LV-9jN" id="cnP-Yx-yER">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WDj-LK-Agx" customClass="RoundedImageView" customModule="ys_client_server_1347" customModuleProvider="target">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WDj-LK-Agx" customClass="RoundedImageView" customModule="client_server_1436" customModuleProvider="target">
                                             <rect key="frame" x="10" y="10" width="100" height="100"/>
                                             <color key="backgroundColor" systemColor="systemYellowColor"/>
                                             <constraints>
@@ -363,7 +363,7 @@
                                     <outlet property="feedItemUserGroupName" destination="jtb-eH-Fx1" id="ON0-ge-NBm"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="feedItemTextCell" id="8ph-aJ-zAb" customClass="FeedItemTextTableViewCell" customModule="ys_client_server_1347" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="feedItemTextCell" id="8ph-aJ-zAb" customClass="FeedItemTextTableViewCell" customModule="client_server_1436" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="169.5" width="414" height="45"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8ph-aJ-zAb" id="7BU-uP-6CX">
@@ -388,7 +388,7 @@
                                     <outlet property="feedItemText" destination="RIi-Tk-OYa" id="C98-KL-w6z"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="feedItemPhotoCell" id="nh4-8Y-JhR" customClass="FeedItemPhotoTableViewCell" customModule="ys_client_server_1347" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="feedItemPhotoCell" id="nh4-8Y-JhR" customClass="FeedItemPhotoTableViewCell" customModule="client_server_1436" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="214.5" width="414" height="350.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nh4-8Y-JhR" id="bNC-6U-JBW">

@@ -16,10 +16,9 @@ class PhotoCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         PhotoAPI(Session.instance).get{ [weak self] photos in
             guard let self = self else { return }
-            self.photoItems = photos!
+            self.photoItems = photos!.response.items!
             self.collectionView.reloadData()
         }
     }

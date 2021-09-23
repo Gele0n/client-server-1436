@@ -6,13 +6,12 @@
 //
 
 import Foundation
-import RealmSwift
 
 struct Groups: Codable {
-
+    let response: GroupResponse
 }
 
-struct Response: Codable {
+struct GroupResponse: Codable {
     let count: Int
     let items: [GroupItem]
 }
