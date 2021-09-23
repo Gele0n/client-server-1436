@@ -15,7 +15,6 @@ struct FeedResponse: Codable {
     let profiles: [Profile]
     let groups: [Group]
     let nextFrom: String
-
     enum CodingKeys: String, CodingKey {
         case items, profiles, groups
         case nextFrom = "next_from"
@@ -29,7 +28,6 @@ struct Group: Codable {
     let type: String
     let isAdmin, isMember, isAdvertiser: Int?
     let photo50, photo100, photo200: String
-
     enum CodingKeys: String, CodingKey {
         case id, name
         case screenName = "screen_name"
@@ -59,6 +57,14 @@ struct Item: Codable {
     let postID: Int?
     let type: String
 
+    var hasText: Bool {
+        return self.text != nil && self.text != ""
+    }
+    
+    var hasPhoto604: Bool {
+        return self.attachments?[0].photo?.photo604 != nil
+    }
+    
     enum CodingKeys: String, CodingKey {
         case sourceID = "source_id"
         case date
@@ -90,13 +96,12 @@ struct Photo: Codable {
     let albumID, date, id, ownerID: Int
     let hasTags: Bool
     let accessKey: String?
-    let height: Int
+    let height: Int?
     let photo1280, photo130, photo604, photo75: String?
     let photo807: String?
     let postID: Int?
     let text: String
     let userID, width: Int?
-
     enum CodingKeys: String, CodingKey {
         case albumID = "album_id"
         case date, id
@@ -118,7 +123,6 @@ struct Photo: Codable {
 
 struct Comments: Codable {
     let count, canPost: Int
-
     enum CodingKeys: String, CodingKey {
         case count
         case canPost = "can_post"
@@ -127,7 +131,6 @@ struct Comments: Codable {
 
 struct Likes: Codable {
     let count, userLikes, canLike, canPublish: Int
-
     enum CodingKeys: String, CodingKey {
         case count
         case userLikes = "user_likes"
@@ -142,7 +145,6 @@ struct PostSource: Codable {
 
 struct Reposts: Codable {
     let count, userReposted: Int
-
     enum CodingKeys: String, CodingKey {
         case count
         case userReposted = "user_reposted"
@@ -162,7 +164,6 @@ struct Profile: Codable {
     let photo50, photo100: String
     let onlineInfo: OnlineInfo
     let online: Int
-
     enum CodingKeys: String, CodingKey {
         case firstName = "first_name"
         case id
@@ -177,8 +178,7 @@ struct Profile: Codable {
 }
 
 struct OnlineInfo: Codable {
-    let visible, isOnline, isMobile: Bool
-
+    let visible, isOnline, isMobile: Bool?
     enum CodingKeys: String, CodingKey {
         case visible
         case isOnline = "is_online"
